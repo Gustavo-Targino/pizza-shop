@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogTrigger } from "@/components/ui/dialog";
 import { TableCell, TableRow } from "@/components/ui/table";
 import { ArrowRight, Search, X } from "lucide-react";
 import { OrderDetails } from "./order-details";
@@ -9,7 +9,6 @@ import { ptBR } from "date-fns/locale";
 import { useState } from "react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { cancelOrder } from "@/api/cancel-order";
-import { GetOrderDetailsResponse } from "@/api/get-order-details";
 import { GetOrdersResponse } from "@/api/get-orders";
 import { deliverOrder } from "@/api/deliver-order";
 import { approveOrder } from "@/api/approve-order";
