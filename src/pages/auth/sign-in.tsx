@@ -33,7 +33,6 @@ export function SignIn() {
   });
 
   async function handleSignIn(data: SignInForm) {
-    console.log(data);
     try {
       await authenticate({ email: data.email });
 
