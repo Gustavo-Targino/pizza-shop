@@ -15,11 +15,9 @@ test("update profile successfully", async ({ page }) => {
 
   const toast = page.getByText("Perfil atualizado com sucesso!");
 
-  expect(toast).toBeVisible();
+  await expect(toast).toBeVisible();
 
   await page.getByRole("button", { name: "Close" }).click();
-
-  await page.waitForTimeout(250);
 
   const profileName = page.getByRole("button", { name: "Rocket Pizza" });
 
@@ -43,5 +41,5 @@ test("update profile error", async ({ page }) => {
     "Houve um erro ao atualizar o perfil, tente novamente.",
   );
 
-  expect(toast).toBeVisible();
+  await expect(toast).toBeVisible();
 });
