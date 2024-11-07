@@ -23,8 +23,7 @@ test("update profile successfully", async ({ page }) => {
 
   const profileName = page.getByRole("button", { name: "Rocket Pizza" });
 
-  expect(profileName).toBeVisible();
-  await page.waitForTimeout(2000);
+  await expect(profileName).toBeVisible();
 });
 
 test("update profile error", async ({ page }) => {
