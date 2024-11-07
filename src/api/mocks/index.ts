@@ -9,7 +9,7 @@ import { getMonthRevenueMock } from "./get-month-revenue-mock";
 import { getPopularProductsMock } from "./get-popular-products-mock";
 import { getDailyRevenueInPeriodMock } from "./get-daily-revenue-in-period-mock";
 import { getProfileMock } from "./get-profile-mocks";
-import { getManagedRestaurantMock } from "./get-manaed-restaurant-mock";
+import { getManagedRestaurantMock } from "./get-managed-restaurant-mock";
 import { updateProfileMock } from "./update-profile-mock";
 import { getOrdersMock } from "./get-orders-mock";
 import { getOrderDetailsMock } from "./get-order-details-mock";
