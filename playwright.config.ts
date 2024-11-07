@@ -3,6 +3,8 @@ import { defineConfig } from "@playwright/test";
 export default defineConfig({
   testDir: "./test",
 
+  testMatch: /.*\.e2e-spec\.ts$/,
+
   fullyParallel: true, // testes paralelos
 
   forbidOnly: !!process.env.CI, // bloquear realizar um único teste em Ci
